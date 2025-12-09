@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTR 160 4V</title>
+    <STYle>
+        *{
+            background-color: #e7ecfc;
+        }
+        .header{
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+        .highlight img{
+            float: left;
+        }
+        .highlight{
+            border: 1px solid black;
+            width: 70%;
+            margin-left: 200px;
+        }
+        span{
+            border-left: 1px solid black;
+        }
+        .dropdown{
+            margin-top: 30px;
+        }
+        .dropdown button{
+            width: 45%;
+            height: 55px;
+            margin-left: 27.5%;
+            background-color: #3498DB;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 21px;
+        }
+        .dropdown button:hover{
+            background-color: #2980B9;
+        }
+        .content{
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            width: 790px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            font-size: 19px;
+            padding: 14px 21px;
+        }
+        .footer{
+            margin-top: 60px;
+            width: 100%;
+            height: 150px;
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </STYle>
+</head>
+<body>
+    <h1 class="header">Apache RTR 160 4V</h1>
+
+    <div class="highlight">
+        <p>
+            <img src="rtr 160 4v_processed.png" alt="pic">
+            <h1>₹ 1,23,870</h1>
+            <p>Ex-Showroom Price</p>
+        </p>
+    </div>
+
+    <h1 style="margin-top: 365px; margin-left: 200px;">Specifications</h1>
+
+    <div class="dropdown">
+        <button onclick="myengine()">Engine</button>
+        <div class="content" id="c1">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Engine Type:</strong> SI, 4 stroke, Oil cooled, SOHC, Fuel Injection 
+                    </td>
+                    <td>
+                        <strong>Displacement:</strong> 159.7 cc
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Maximum Power:</strong> 17.55 PS @9250 rpm
+                    </td>
+                    <td>
+                        <strong>Maximum Torque:</strong> 14.73 Nm @7250 rpm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Fuel supply system:</strong> Fuel Injection: Bosch-Closed loop 
+                    </td>
+                    <td>
+                        <strong>Valve per cylinder:</strong> 4 Valves 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Ignition:</strong> Electric start
+                    </td>
+                    <td>
+                        <strong>Power to weight Ratio:</strong> 0.088 kW/kg
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Cooling system:</strong> Oil cooled with Ram Air Assist 
+                    </td>
+                    <td>
+                        <strong>Gear Box:</strong> 5 speed
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mycse()">Chassis, Suspension & Electrical</button>
+        <div class="content" id="c2">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Frame:</strong> Double cradle Split Synchro Stiff Frame
+                    </td>
+                    <td>
+                        <strong>Front Suspension:</strong> Telescopic Fork
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Rear Suspension:</strong> Mono Shock
+                    </td>
+                    <td>
+                        <strong>Battery:</strong> 12V, 6Ah MF
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Headlamp:</strong> LED Headlamp with DRL/position lamp
+                    </td>
+                    <td>
+                        <strong>Tail lamp:</strong> LED
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mywtb()">Wheel, Tyre & Brake</button>
+        <div class="content" id="c3">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Front Rim:</strong> 1.85x17
+                    </td>
+                    <td>
+                        <strong>Rear Rim:</strong> Drum- 2.15x17 &nbsp; <span></span> &nbsp; Disc- 3.5x17
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Front Tyre:</strong> 90/90-17 49P Tubeless
+                    </td>
+                    <td>
+                        <strong>Rear Tyre:</strong> 110/80-17 57P Tubeless-Standard Drum, 130/70 R17 M/C 62P Tubeless (Radial tyre)-Standard Disc
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>ABS:</strong> Single Channel Super-Moto ABS
+                    </td>
+                    <td>
+                        <strong>Brake Fluid:</strong> DOT 3 / DOT 4
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Front Brake:</strong> 270 mm dia Petal Disc
+                    </td>
+                    <td>
+                        <strong>Rear Brake:</strong> 130 mm dia Drum &nbsp; <span></span> &nbsp; 200 mm dia Petal Disc
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mydimensions()">Dimensions</button>
+        <div class="content" id="c4">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Fuel Tank Capacity:</strong> 12 L
+                    </td>
+                    <td>
+                        <strong>Ground Clearance:</strong> 180 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Height:</strong> 1050 mm
+                    </td>
+                    <td>
+                        <strong>Length:</strong> 2035 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Width:</strong> 790 mm
+                    </td>
+                    <td>
+                        <strong>Kerb Weight:</strong> 144 kg (Drum) &nbsp; <span></span> &nbsp; 146 kg (Disc)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Seat Height:</strong> 800 mm
+                    </td>
+                    <td>
+                        <strong>Wheelbase:</strong> 1357 mm
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <h2 class="footer">Contact: sabhishek52@yahoo.com</h2>
+
+    <script>
+        function myengine(){
+            var x=document.getElementById('c1');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mycse(){
+            var x=document.getElementById('c2');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mywtb(){
+            var x=document.getElementById('c3');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mydimensions(){
+            var x=document.getElementById('c4');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

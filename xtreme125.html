@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtreme 125R</title>
+    <style>
+        *{
+            background-color: #e7ecfc;
+            box-sizing: border-box;
+        }
+        .header{
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+        .highlight{
+            border: 1px solid black;
+            width: 70%;
+            margin-left: 200px;
+        }
+        .highlight img{
+            float: left;
+        }
+        .highlight button{
+            padding: 5px;
+            margin: 3px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .highlight button:focus{
+            background-color: blueviolet;
+            color: white;
+        }
+        .dropdown{
+            margin-left: auto;
+            margin-right: auto;
+            width: 65%;
+            margin-top: 35px;
+        }
+        .dropdown button{
+            width: 60%;
+            height: 55px;
+            margin-left: 160px;
+            background-color: #3498DB;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 21px;
+        }
+        .dropdown button:hover{
+            background-color: #2980B9;
+        }
+        .content{
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            font-size: 19px;
+            padding: 14px 21px;
+        }
+        .feature{
+            float: left;
+            width: 19%;
+            margin-left: 200px;
+            padding: 17px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        @media only screen and (max-width:700px){
+            .feature{
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        @media only screen and (max-width:500px){
+            .feature{
+                width: 100%;
+            }
+        }
+        .footer{
+            width: 100%;
+            height: 200px;
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Xtreme 125R</h1>
+
+    <div class="highlight">
+        <p>
+            <img src="xtreme 125 blue.png" alt="pic" id="color">
+            <h1>₹ 96,719</h1>
+            <p>Ex-Showroom Price</p>
+            <button onclick="document.getElementById('color').src='xtreme 125 red.png'">Firestorm Red</button>
+            <button onclick="document.getElementById('color').src='xtreme 125 black.png'">Stallion Black</button>
+            <button onclick="document.getElementById('color').src='xtreme 125 blue.png'">Cobalt Blue</button>
+        </p>
+    </div>
+
+    <h1 style="margin-left: 200px; margin-top: 225px;">Specifications</h1>
+
+    <div class="dropdown">
+        <button onclick="myengine()">Engine</button>
+        <div class="content" id="c1">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Acceleration 0-60 kmph:</strong> 5.9 Sec
+                    </td>
+                    <td>
+                        <strong>Fuel Consumption:</strong> 66 kmpl 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Engine Type:</strong> Air Cooled 4 Stroke
+                    </td>
+                    <td>
+                        <strong>Bore & Stroke:</strong> 52.4mm x 57.8mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Displacement:</strong> 124.7
+                    </td>
+                    <td>
+                        <strong>Max Power:</strong> 11.4 BHP @8250 RPM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Max Torque:</strong> 10.5 Nm @ 6500 RPM
+                    </td>
+                    <td>
+                        <strong>Fuel System:</strong> Fuel Injection
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mydimensions()">Dimensions</button>
+        <div class="content" id="c2">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Overall Length:</strong> 2009 mm
+                    </td>
+                    <td>
+                        <strong>Overall Width:</strong> 793 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Overall Height:</strong> 1051 mm
+                    </td>
+                    <td>
+                        <strong>Wheelbase:</strong> 1319 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Seat Height:</strong> 794 mm
+                    </td>
+                    <td>
+                        <strong>Ground Clearance:</strong> 180 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Trail:</strong> 89.2 mm
+                    </td>
+                    <td>
+                        <strong>Fuel Tank Capacity:</strong> 10 L
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Kerb Mass:</strong> 136 kg
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mywt()">Wheels & Tyres</button>
+        <div class="content" id="c3">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Wheel Type:</strong> Alloy
+                    </td>
+                    <td>
+                        <strong>Front Tyre Size:</strong> 90/90-17 TL
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Rear Tyre Size:</strong> 120/80-17 TL
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mysus()">Suspension</button>
+        <div class="content" id="c4">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Front Suspension Type:</strong> Dia. 37 Conventional Fork
+                    </td>
+                    <td>
+                        <strong>Rear Suspension Type:</strong> Hydraulic Shock Absorbers
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mytc()">Transmission & Chassis</button>
+        <div class="content" id="c5">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Caster:</strong> 24.1&deg;
+                    </td>
+                    <td>
+                        <strong>Steering Angle:</strong> 43&deg;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Frame Type:</strong> Diamond
+                    </td>
+                    <td>
+                        <strong>Swing Arm:</strong> Tubular-Fabricated
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Transmission Type:</strong> Constant Mesh, 5 Speed
+                    </td>
+                    <td>
+                        <strong>Clutch Type:</strong> Wet Multi Plate
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mybrakes()">Brakes</button>
+        <div class="content" id="c6">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Front Brake Type:</strong> Disc Type (CBS)-Dia 240 mm, Disc Type (ABS)-Dia 276 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Rear Brake Type</strong> Drum Type-Dia 130
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myelectric()">Electricals</button>
+        <div class="content" id="c7">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Battery:</strong> MF 12V, 4 Ah (ETZ 5)
+                    </td>
+                    <td>
+                        <strong>Starting System:</strong> Self (With i3s) & Kick
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>ACG Capacity:</strong> 160 W / 5000 rpm
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <h2 style="margin-top: 90px; margin-left: 200px;">Xtreme 125R Features</h2>
+
+    <div class="feature">
+        <a href="xtreme abs.jpg" target="_blank">
+            <img src="xtreme abs.jpg" alt="pic" width="319" height="180">
+        </a>
+        <div class="desc">
+            <h3>Single-Channel ABS</h3>
+            <p>First-in-segment ABS for greater control</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <a href="xtreme sprint.jpg" target="_blank"><img src="xtreme sprint.jpg" alt="pic" width="319" height="180"></a>
+        <div class="desc">
+            <h3>Sprint-EBT Engine</h3>
+            <p>Increased power & tuned gear ratio to deliver on ride quality & fast acceleration</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <a href="xtreme widetyre.jpg" target="_blank"><img src="xtreme wt.jpg" alt="pic" width="319" height="180"></a>
+        <div class="desc">
+            <h3>Wide Rear Tyre</h3>
+            <p>First-in-segment 120/80 section tyre for increased stability</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <a href="xtreme monoshock.jpg" target="_blank"><img src="xtreme monoshock.jpg" alt="pic" width="319" height="180"></a>
+        <div class="desc">
+            <h3>Monoshock Suspension by SHOWA</h3>
+            <P>Gives you improved agility and enhanced comfort</P>
+        </div>
+    </div>
+
+    <div class="feature">
+        <a href="xtreme led.jpg" target="_blank"><img src="xtreme led.jpg" alt="pic" width="319" height="180"></a>
+        <div class="desc">
+            <h3>Full LED Setup</h3>
+            <p>All LED package: projector headlamp, tail lamp, winkers & position lamp</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <a href="xtreme mileage.png" target="_blank"><img src="xtreme mileage.png" alt="pic" width="319" height="180"></a>
+        <div class="desc">
+            <h3>Fantastic Mileage</h3>
+            <p>Unmatched efficiency with an astounding 66 kmpl mileage</p>
+        </div>
+    </div>
+
+    <h2 class="footer">Contact: sabhishek52@yahoo.com</h2>
+
+    <script>
+        function myengine(){
+            var x=document.getElementById('c1');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mydimensions(){
+            var x=document.getElementById('c2');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mywt(){
+            var x=document.getElementById('c3');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mysus(){
+            var x=document.getElementById('c4');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mytc(){
+            var x=document.getElementById('c5');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mybrakes(){
+            var x=document.getElementById('c6');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function myelectric(){
+            var x=document.getElementById('c7');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

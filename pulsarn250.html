@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsar N250</title>
+    <style>
+        *{
+            background-color: #e7ecfc;
+        }
+        .header{
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+        .highlight{
+            border: 1px solid black;
+            width: 70%;
+            margin-left: 200px;
+        }
+        .highlight img{
+            float: left;
+        }
+        .highlight button{
+            padding: 5px;
+            margin: 4px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .highlight button:focus{
+            background-color: blueviolet;
+            color: white;
+        }
+        .dropdown{
+            margin-top: 30px;
+        }
+        .dropdown button{
+            width: 45%;
+            height: 55px;
+            margin-left: 27.5%;
+            background-color: #3498DB;
+            color: white;
+            font-size: 21px;
+            cursor: pointer;
+            border: none;
+        }
+        .dropdown button:hover{
+            background-color: #2980B9;
+        }
+        .content{
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            width: 790px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            font-size: 19px;
+            padding: 14px 21px;
+        }
+        .footer{
+            margin-top: 60px;
+            width: 100%;
+            height: 150px;
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Pulsar N250</h1>
+
+    <div class="highlight">
+        <p>
+            <img src="pulsar_n250_black-bg.png" alt="pic" width="600" id="color">
+            <h1>₹ 1,53,267</h1>
+            <p>Ex-Showroom Price</p>
+            <button onclick="document.getElementById('color').src='pulsar_n250_red-bg.png'">Glossy Racing Red</button>
+            <button onclick="document.getElementById('color').src='pulsar_n250_white-bg.png'">Pearl Metallic White</button>
+            <button onclick="document.getElementById('color').src='pulsar_n250_black-bg.png'">Brooklyn Black</button>
+        </p>
+    </div>
+
+    <h1 style="margin-top: 300px; margin-left: 200px;">Specifications</h1>
+
+    <div class="dropdown">
+        <button onclick="myengine()">Engine</button>
+        <div class="content" id="c1">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Engine Type:</strong> Single Cylinder, 4 Stroke, SOHC, 2 Valve, Oil Cooled, FI
+                    </td>
+                    <td>
+                        <strong>Displacement:</strong> 249.07 cc
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Max Power:</strong> 24.5 PS @8750 rpm
+                    </td>
+                    <td>
+                        <strong>Max Torque:</strong> 21.5 Nm @6500 rpm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Transmission:</strong> Constant Mesh 5 Speed
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mystb()">Suspension, Tyres & Brakes</button>
+        <div class="content" id="c2">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Front Suspension:</strong> USD (37 mm)
+                    </td>
+                    <td>
+                        <strong>Rear Suspension:</strong> Mono shock nitrox
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Front Tyre:</strong> R17 Tubeless
+                    </td>
+                    <td>
+                        <strong>Rear Tyre:</strong> R17 Tubeless
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Front Brake:</strong> 300 mm Disc with Dual Channel ABS, ABS ride modes & Traction control
+                    </td>
+                    <td>
+                        <strong>Rear Brake:</strong> 230 mm Disc
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myelectric()">Electricals</button>
+        <div class="content" id="c3">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Console features:</strong> Fully Digital Reverse Monochrome LCD Speedometer with segmented Turn by Turn Navigation, Bluetooth Connectivity, Gear indicator, Clock, DTE, Ride modes
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <strong>Headlamp:</strong> Bi functional LED projector headlamp with LED DRLs
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mydimensions()">Dimensions</button>
+        <div class="content" id="c4">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Wheelbase:</strong> 1342 mm
+                    </td>
+                    <td>
+                        <strong>Seat Height Rider / Pillion:</strong> 800 mm / 928 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Ground Clearance:</strong> 165 mm
+                    </td>
+                    <td>
+                        <strong>Kerb Weight:</strong> 164 kg
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Fuel Tank Capacity:</strong> 14 L
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <h2 class="footer">Contact: sabhishek52@yahoo.com</h2>
+
+    <script>
+        function myengine(){
+            var x=document.getElementById('c1');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mystb(){
+            var x=document.getElementById('c2');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function myelectric(){
+            var x=document.getElementById('c3');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mydimensions(){
+            var x=document.getElementById('c4');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

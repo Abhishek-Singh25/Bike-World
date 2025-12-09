@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FZ-FI</title>
+    <style>
+        *{
+            background-color: #e7ecfc;
+        }
+        .header{
+            margin-left: 200px;
+            margin-top: 70px;
+        }
+        .highlight img{
+            float: left;
+        }
+        .highlight{
+            border: 1px solid black;
+            width: 70%;
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+        .dropdown button{
+            background-color: #3498DB;
+            color: white;
+            margin-left: 27.5%;
+            width: 45%;
+            height: 55px;
+            font-size: 21px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown button:hover{
+            background-color: #2980B9;
+        }
+        .dropdown{
+            margin-top: 30px;
+        }
+        .content{
+           margin-left: auto;
+           margin-right: auto;
+           width: 790px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+        .dropdown table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dropdown td{
+            font-size: 19px;
+            padding: 14px 21px;
+        }
+        .engine{
+            margin-top: 35px;
+        }
+        .b1{
+            float: left;
+            width: 40%;
+        }
+        .monocross{
+            clear: both;
+        }
+        .b2{
+            float: left;
+            width: 40%;
+        }
+        .abs{
+            clear: both;
+        }
+        .b3{
+            float: left;
+            width: 40%;
+        }
+        .tyre{
+            clear: both;
+        }
+        .b4{
+            float: left;
+            width: 40%;
+        }
+        .seat{
+            clear: both;
+        }
+        .b5{
+            float: left;
+            width: 40%;
+        }
+        .hl{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b6{
+            float: right;
+            width: 40%;
+            padding: 10px;
+        }
+        .muffler{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b7{
+            float: left;
+            width: 40%;
+        }
+        .cluster{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b8{
+            float: right;
+            width: 40%;
+            padding: 10px;
+        }
+        .cowl{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b9{
+            float: left;
+            width: 40%;
+        }
+        .highlight button{
+            border: none;
+            background-color: lightgray;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+        .highlight button:focus{
+            background-color: blueviolet;
+            color: white;
+        }
+        .features p{
+            text-align: justify;
+            font-size: 20px;
+        }
+        .footer{
+            margin-top: 40px;
+            width: 100%;
+            height: 200px;
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">
+        FZ-FI
+    </h1>
+
+    <div class="highlight">
+        <p>
+            <img src="fz fi_processed.png" alt="pic" id="color">
+            <h1>₹ 1,16,500</h1>
+            <p>Ex-Showroom Price</p>
+            <button onclick="document.getElementById('color').src='fzfi mattblack_processed.png'">Metallic Black</button>
+            <button onclick="document.getElementById('color').src='fz fi_processed.png'">Matte Cyan</button>
+        </p>
+    </div>
+
+    <h1 style="margin-top: 300px; margin-left: 200px;">Specifications</h1>
+
+    <div class="dropdown" style="margin-top: 10px;">
+        <button onclick="myengine()">Engine</button>
+        <div class="content" id="content1">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Engine Type:</strong> Air cooled, 4-stroke, SOHC, 2-valve
+                    </td>
+                    <td>
+                        <strong>Displacement:</strong> 149 cc
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Bore & Stroke:</strong> 57.3mm x 57.9mm
+                    </td>
+                    <td>
+                        <strong>Compression Ratio:</strong> 9.6:1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Maximum Horse Power:</strong> 12.4 PS @7250 RPM
+                    </td>
+                    <td>
+                        <strong>Maximum torque:</strong> 13.3 Nm @5500 RPM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Starting system type:</strong> Electric Starter
+                    </td>
+                    <td>
+                        <strong>Clutch type:</strong> Wet, multi-disc
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown" style="margin-top: 10px;">
+        <button onclick="mydimensions()">Dimensions</button>
+        <div class="content" id="content2">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Length:</strong> 1990mm
+                    </td>
+                    <td>
+                        <strong>Width:</strong> 780mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Height:</strong> 1080mm
+                    </td>
+                    <td>
+                        <strong>Seat height:</strong> 790mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Wheelbase:</strong> 1330mm
+                    </td>
+                    <td>
+                        <strong>Minimum ground clearance:</strong> 165mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Kerb Weight:</strong> 135kg
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown" style="margin-top: 10px;">
+        <button onclick="mychassis()">Chassis</button>
+        <div class="content" id="content3">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Tubeless tyre size (front):</strong> 100/80-17M/C 52P
+                    </td>
+                    <td>
+                        <strong>Tubeless tyre size (rear):</strong> 140/60R17M/C 63P
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Brake type (front):</strong> Disc Brake (282mm)
+                    </td>
+                    <td>
+                        <strong>Brake type (rear):</strong> Disc Brake (220mm)
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown" style="margin-top: 10px;">
+        <button onclick="myoi()">Other Information</button>
+        <div class="content" id="content4">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Fuel tank capacity:</strong> 13L
+                    </td>
+                    <td>
+                        <strong>Transmission type:</strong> Constant mesh, 5-speed
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Headlight:</strong> LED
+                    </td>
+                    <td>
+                        <strong>Front suspension:</strong> Telescopic fork
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Rear suspension:</strong> 7-Step Adjustable Monocross
+                    </td>
+                    <td>
+                        <strong>Brake/Tail light:</strong> 12V, 21/5Wx1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Clock:</strong> Digital
+                    </td>
+                    <td>
+                        <strong>Speedometer:</strong> Digital
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Battery:</strong> 12V
+                    </td>
+                    <td>
+                        <strong>ECO indicator:</strong> Equipped
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Fuel supply:</strong> Fuel injection
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="features">
+    <div class="engine">
+        <div class="b1">
+            <img src="fzfi engine.png" alt="pic" width="463">
+        </div>
+        <div class="b1">
+            <h1>Trusted & Efficient 149cc FI Engine</h1>
+            <p>FZ-FI mounts an air-cooled 4-stroke 149cc SOHC, 2-valve, single-cylinder fuel-injected engine which has been tuned to further polish the feeling of superior acceleration from stops and exhilarating feeling when overtaking. The ignition timing and injection maps for the fuel injection system are designed such that riders get a good feeling of acceleration while still enjoying the upright riding position.</p>
+        </div>
+    </div>
+
+    <div class="monocross">
+        <div class="b2">
+            <img src="fzfi monocross.png" alt="pic" width="463">
+        </div>
+        <div class="b2">
+            <h1>Monocross Suspension</h1>
+            <p>It provides an excellent shock-absorbing performance and a good feeling of stability during braking. The rear suspension is a lightweight Monocross suspension unit that contributes to mass centralization and provides 120mm of wheel travel, which is tuned for good balance between the spring rate and damping force.</p>
+        </div>
+    </div>
+
+    <div class="abs">
+        <div class="b3">
+            <img src="fzfi abs.png" alt="pic" width="463">
+        </div>
+        <div class="b3">
+            <h1>Front Disk Brake with Single Channel ABS</h1>
+            <p>Front Disc with Bosch Anti-Lock Braking System (ABS) helps in achieving greater control over the bike during braking by restricting the wheel lock ups thereby maintaining tractive contact with the road surface to avoid skidding in slippery conditions. Rear Disc brake augments more quality to the long legacy of FZ braking system.</p>
+        </div>
+    </div>
+
+    <div class="tyre">
+        <div class="b4">
+            <img src="fzfi tyre.png" alt="pic" width="463">
+        </div>
+        <div class="b4">
+            <h1>140mm Wide Radial Tyre</h1>
+            <p>With a 100/80-17 at the front and a 140/60-17 radial tyre at the rear offers low rolling resistance and deliver great fuel economy and good grip.</p>
+        </div>
+    </div>
+    <div class="seat">
+        <div class="b5">
+            <img src="fzfi seat.png" alt="pic" width="463">
+        </div>
+        <div class="b5">
+            <h1>Comfortable Two-Level Seat</h1>
+            <p>The two-level seat has an excellent feeling of fit and cushioning that works well with an upright, relaxed riding position. The cushioning material has a suitable degree of firmness and is paired with a seat material that offers superb fit to provide a steady ride and comfort for both the rider and pillion rider. The pillion seat has a 16% larger seating surface area, is 26 mm wider in the hip area and is 5 mm thicker for added comfort.</p>
+        </div>
+    </div>
+    <div class="hl">
+        <div class="b6">
+            <img src="fzfi hl.png" alt="pic" width="463">
+        </div>
+        <div class="b6">
+            <h1>LED Headlight</h1>
+            <p>The new LED headlight provides excellent visibility over a wide range with very little unevenness. It uses a reflector with ideal light projection, and separate units for high and low beam.</p>
+        </div>
+    </div>
+    <div class="muffler">
+        <div class="b7">
+            <img src="fzfi muffler.png" alt="pic" width="463">
+        </div>
+        <div class="b7">
+            <h1>Advanced Midship Muffler & enhanced muffler sound</h1>
+            <p>A midship muffler, with its advantages of mass concentration, weight reduction and shorter length, is adopted. The newly designed muffler protector further adds to the impression of sharpness. The Muffler sound is newly designed.</p>
+        </div>
+    </div>
+    <div class="cluster">
+        <div class="b8">
+            <img src="fzfi cluster.png" alt="pic" width="463">
+        </div>
+        <div class="b8">
+            <h1>Negative LCD Instrument Cluster</h1>
+            <p>The Negative LCD instrument cluster panel has a black background and white lettering. Digital speedometer, bar-style tachometer above, and a fuel gauge are constantly displayed, along with ABS warning lamp while the odometer, Trip 1, Trip 2, F Trip, clock and others can be selected for display. There is also an ECO indicator to enable more fuel-efficient riding.</p>
+        </div>
+    </div>
+    <div class="cowl">
+        <div class="b9">
+            <img src="fzfi cowl.png" alt="pic" width="463">
+        </div>
+        <div class="b9">
+            <h1>Under Cowl</h1>
+            <p>The lower engine fairing has been introduced to reduce mud and dirt splatter. The under cowl has been designed to enhance the sporty look of the bike.</p>
+        </div>
+    </div>
+    </div>
+
+    <h2 class="footer">
+        Contact: sabhishek52@yahoo.com
+    </h2>
+
+    <script>
+        function myengine(){
+            var x=document.getElementById('content1');
+            if(x.style.display=="none"){
+            x.style.display="block";
+        }
+        else{
+        x.style.display="none"}
+        }
+
+        function mydimensions(){
+            var x=document.getElementById('content2');
+            if(x.style.display=="none"){
+            x.style.display="block";
+        }
+        else{
+        x.style.display="none"}
+        }
+        function mychassis(){
+            var x=document.getElementById('content3');
+            if(x.style.display=="none"){
+            x.style.display="block";
+        }
+        else{
+        x.style.display="none"}
+        }
+        function myoi(){
+            var x=document.getElementById('content4');
+            if(x.style.display=="none"){
+            x.style.display="block";
+        }
+        else{
+        x.style.display="none"}
+        }
+
+    </script>
+</body>
+</html>

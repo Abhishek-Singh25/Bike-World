@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike World</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: #f1f1f1;
+        }
+        .headertxt{
+            float: right;
+            text-align: center;
+            width: 65%;
+            margin-top: 120px;
+        }
+        .navbar ul{
+            list-style-type: none;
+            overflow: hidden;
+            background-color: #333;
+            margin-top: -4px;
+            padding: 0;
+        }
+        .navbar li{
+            float: left;
+        }
+        .navlink{
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        .navlink:hover{
+            background-color: #111;
+        }
+        .brand, .brand td{
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .brand{
+           position: relative;
+           left: 360px; 
+        }
+        td{
+            padding: 5px;
+            width: 180px;
+        }
+        .budget{
+            position: relative;
+            left: 360px;
+        }
+        .budget a{
+            text-decoration: none;
+        }
+        .budget td{
+            border-bottom: 1px solid black;
+            text-align: center;
+            border-radius: 5px;
+            padding: 12px;
+            font-size: 21px;
+        }
+        .displacement{
+            position: relative;
+            left: 360px;
+            border-collapse: collapse;
+        }
+        .displacement a{
+            text-decoration: none;
+        }
+        .displacement td{
+            border-bottom: 1px solid black;
+            text-align: center;
+            padding: 12px;
+            font-size: 21px;
+        }
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown button{
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0;
+        }
+        .dropdown button:hover{
+            background-color: #111;
+        }
+        .dropdown-content{
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            padding: 15px;
+            font-size: 19px;
+            display: none;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown1 button{
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+        .dropdown1 button:hover{
+            background-color: #111;
+        }
+        .dropdown1{
+            margin-left: 1210px;
+            overflow: hidden;
+        }
+        .content{
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            padding: 15px;
+            font-size: 19px;
+            margin-left: -270px;
+            text-align: justify;
+            display: none;
+        }
+        .footer{
+            margin-top: 70px;
+            width: 100%;
+            height: 200px;
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #myinput{
+            margin-top: 100px;
+            padding: 5px;
+            width: 300px;
+            border-radius: 5px;
+        }
+        .search{
+            position: relative;
+            display: inline-block;
+        }
+        #myul{
+            position: absolute;
+            background-color: #f1f1f1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            list-style-type: none;
+            min-width: 300px;
+            z-index: 1;
+            display: none;
+        }
+        .search a{
+            text-decoration: none;
+            color: black;
+            font-size: 19px;
+        }
+        .search li{
+            padding: 5px;
+        }
+        .search li:hover{
+            background-color: aqua;
+        }
+        #close{
+            padding: 5px;
+            float: right;
+            margin-top: 100px;
+            margin-left: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="pic1 croped.jpg" alt="pic" width="35%" height="350">
+        <div class="headertxt">
+            <h1>Bike World</h1>
+            <h3 style="margin-top: 15px;">Check out the detailed information of the motorcycle you desire</h3>
+            <div class="search">
+            <input type="text" placeholder="Search..." id="myinput" onkeyup="search()">
+            <button id="close" onclick="close1()">Close</button>
+            <ul id="myul">
+                <li><a href="passion.html">Passion Plus</a></li>
+                <li><a href="xtreme125.html">Xtreme 125R</a></li>
+                <li><a href="splendor.html">Splendor Plus</a></li>
+                <li><a href="raider.html">Raider 125</a></li>
+                <li><a href="starcity.html">Star City Plus</a></li>
+                <li><a href="fzfi.html">FZ-FI</a></li>
+                <li><a href="xtreme1604v.html">Xtreme 160r 4v</a></li>
+                <li><a href="rtr1604v.html">Apache RTR 160 4V</a></li>
+                <li><a href="pulsar150.html">Pulsar 150</a></li>
+                <li><a href="avenger160.html">Avenger 160 Street</a></li>
+                <li><a href="r15v4.html">R15 V4</a></li>
+                <li><a href="mt15.html">MT-15 Ver 2.0</a></li>
+                <li><a href="karizma.html">Karizma XMR</a></li>
+                <li><a href="pulsarn250.html">Pulsar N250</a></li>
+                <li><a href="r3.html">R3</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+    <ul>
+        <li><a href="terminology.html" class="navlink">Terminology</a></li>
+        <div class="dropdown">
+            <button>Contact</button>
+            <div class="dropdown-content">
+                sabhishek52@yahoo.com
+            </div>
+        </div>
+        <div class="dropdown1">
+            <button onclick="myabout()">About</button>
+            <div class="content" id="c1">
+                <p>
+                    Welcome to bikeworld.com, your premier destination for comprehensive & up-to-date motorcycle information. 
+                    My mission is to fuel the passion of riders & enthusiasts alike by providing detailed specifications, unbiased reviews, & the latest news from multiple motorcycle brands around the globe. <br> <br>
+                    My extensive collection includes everything from cutting-edge superbikes to classic cruisers & commuter, ensuring that no matter your style or preference, you will find the bike that's right for you.
+                    I proud myself on my meticulous approach to gathering information, ensuring that every detail, review, & article is accurate, relevant, & valuable to our readers.
+                </p>
+            </div>
+        </div>
+    </ul>
+    </div>
+
+    <h2 style="margin-top: 40px; margin-bottom: 35px;">Browse Motorcycles by Brand</h2>
+
+    <table class="brand">
+        <tr>
+            <td>
+                <a href="yamaha.html.html">
+                    <img src="yamaha logo.png" alt="logo" width="130">
+                </a>
+                <p>Yamaha</p>
+            </td>
+            <td>
+                <a href="hero.html">
+                    <img src="hero logo.png" alt="logo" width="130">
+                </a>
+                <p>Hero</p>
+            </td>
+            <td>
+                <a href="tvs.html">
+                    <img src="tvs logo.png" alt="logo" width="130">
+                </a>
+                <p style="margin-top: 17px;">TVS</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="bajaj.html">
+                    <img src="bajaj logo.png" alt="logo" width="50">
+                </a>
+                <p>Bajaj</p>
+            </td>
+        </tr>
+    </table>
+
+    <h2 style="margin-top: 57px; margin-bottom: 35px;">Browse Motorcycles by Budget</h2>
+
+    <table class="budget">
+        <tr>
+            <td>
+                <a href="under1l.html">Under 1,00,000</a>
+            </td>
+            <td>
+                <a href="under15l.html">1,00,000-1,50,000</a>
+            </td>
+            <td>
+                <a href="under2l.html">1,50,000-2,00,000</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="above2l.html">Above 2,00,000</a>
+            </td>
+        </tr>
+    </table>
+
+    <h2 class="footer">Contact: sabhishek52@yahoo.com</h2>
+
+    <script>
+        function myabout(){
+            var x=document.getElementById('c1');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function search(){
+            var input, filter, ul, li, a, i, txtvalue;
+            input=document.getElementById('myinput');
+            filter=input.value.toUpperCase();
+            ul=document.getElementById('myul');
+            li=ul.getElementsByTagName('li');
+            for(i=0; i<li.length; i++){
+            a=li[i].getElementsByTagName('a')[0];
+            txtvalue=a.textContent || a.innerText;
+            if(txtvalue.toUpperCase().indexOf(filter)>-1){
+                li[i].style.display="";
+            }
+            else{
+                li[i].style.display="none";
+            }
+           }
+           document.getElementById('myul').style.display="block";
+           document.getElementById('close').style.display="block";
+        }
+
+        function close1(){
+            document.getElementById('myul').style.display="none";
+            document.getElementById('close').style.display="none";
+        }
+
+    </script>
+
+</body>
+</html>

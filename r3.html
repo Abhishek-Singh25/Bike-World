@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha R3</title>
+    <style>
+        *{
+            background-color: #e7ecfc;
+        }
+        .highlight img{
+            float: left;
+        }
+        .header{
+            margin-left: 200px;
+            margin-top: 45px;
+        }
+        .highlight{
+            border: 1px solid black;
+            width: 70%;
+            margin-left: 200px;
+        }
+        .highlight button{
+            padding: 5px;
+            margin: 3px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .highlight button:focus{
+            background-color: blueviolet;
+            color: white;
+        }
+        .content{
+            display: none;
+            width: 70%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            padding: 14px;
+            font-size: 17px;
+        }
+        .dropdown{
+            width: 100%;
+            margin-top: 15px;
+        }
+        .dropdown button{
+            margin-left: 27.5%;
+            width: 45%;
+            height: 55px;
+            font-size: 21px;
+            background-color: #3498DB;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        .dropdown button:hover{
+            background-color: #2980B9;
+        }
+        .chassis{
+            border-top: 1px solid black;
+        }
+        .b1{
+            float: left;
+            width: 40%;
+        }
+        .b1 p{
+            font-size: 22px;
+            text-align: justify;
+        }
+        .usd{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b2{
+            float: right;
+            width: 40%;
+            padding: 10px;
+        }
+        .b2 p{
+            font-size: 22px;
+            text-align: justify;
+        }
+        .console{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b3{
+            float: left;
+            width: 40%;
+        }
+        .b3 p{
+            font-size: 22px;
+            text-align: justify;
+        }
+        .design{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b4{
+            float: right;
+            width: 40%;
+            padding: 10px;
+        }
+        .b4 p{
+            font-size: 22px;
+            text-align: justify;
+        }
+        .led{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b5{
+            float: left;
+            width: 40%;
+        }
+        .b5 p{
+            font-size: 22px;
+            text-align: justify;
+        }
+        .handlebar{
+            clear: both;
+            border-top: 1px solid black;
+        }
+        .b6{
+            float: right;
+            width: 40%;
+            padding: 10px;
+        }
+        .b6 p{
+            font-size: 22px;
+            text-align: justify;
+        }
+        .footer{
+            margin-top: 40px;
+            width: 100%;
+            height: 200px;
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">R3</h1>
+
+    <div class="highlight">
+        <p>
+            <img src="r3 blue_processed.png" alt="pic" id="color">
+            <h1>₹ 4,64,900</h1>
+            <p>Ex-Showroom Price</p>
+            <button onclick="document.getElementById('color').src='r3 blue_processed.png'">Icon Blue</button>
+            <button onclick="document.getElementById('color').src='r3 black png_processed.png'">Yamaha Black</button>
+        </p>
+    </div>
+
+    <h1 style="margin-top: 365px; margin-left: 200px;">Specifications</h1>
+
+    <div class="dropdown" style="margin-top: 45px;">
+        <button onclick="myengine()">Engine</button>
+        <div class="content" id="c1">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Engine type:</strong> 4-stroke, 2-cylinder, Liquid-cooled, DOHC, 4-valves  
+                    </td>
+                    <td>
+                        <strong>Displacement:</strong> 321cc
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Bore & stroke:</strong> 68.0 x 44.1 mm
+                    </td>
+                    <td>
+                        <strong>Compression ratio:</strong> 11.2:1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Maximum power:</strong> 42 PS @10,750 RPM 
+                    </td>
+                    <td>
+                        <strong>Maximum torque:</strong> 29.5 Nm @9,000 RPM
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Clutch type:</strong> Wet, Multiple Disc
+                    </td>
+                    <td>
+                        <strong>Ignition system:</strong> Electric
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Starter system:</strong> TCI
+                    </td>
+                    <td>
+                        <strong>Transmission system:</strong> Constant Mesh, 6-speed
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Fuel system:</strong> Fuel Injection
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mydimensions()">Dimensions</button>
+        <div class="content" id="c2">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Overall length:</strong> 2,090 mm
+                    </td>
+                    <td>
+                        <strong>Overall width:</strong> 730 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Overall height:</strong> 1,140 mm
+                    </td>
+                    <td>
+                        <strong>Seat height:</strong> 780 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Wheelbase:</strong> 1,380 mm
+                    </td>
+                    <td>
+                        <strong>Minimum ground clearance:</strong> 160 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Wet weight:</strong> 169 kg
+                    </td>
+                    <td>
+                        <strong>Fuel tank capacity:</strong> 14 L
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mychassis()">Chassis</button>
+        <div class="content" id="c3">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Frame type:</strong> Diamond
+                    </td>
+                    <td>
+                        <strong>Caster angle:</strong> 25&deg;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Trail:</strong> 95 mm
+                    </td>
+                    <td>
+                        <strong>Front suspension:</strong> Telescopic Upside Down Fork (USD Fork)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Rear suspension:</strong> Swingarm
+                    </td>
+                    <td>
+                        <strong>Front brake:</strong> Hydraulic single disc, 298 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Rear brake:</strong> Hydraulic single disc, 220 mm
+                    </td>
+                    <td>
+                        <strong>Front tyre:</strong> 110/70 R17M/C 54H Tubeless
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <strong>Rear tyre:</strong> 140/70 R17M/C 66H Tubeless
+                    </td>
+                    <td>
+                        <strong>ABS:</strong> Dual Channel
+                    </td>
+                </tr>
+                
+                    <td>
+                        <strong>ABS:</strong> Dual Channel
+                    </td>
+                
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myoi()">Other Information</button>
+        <div class="content" id="c4">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Battery:</strong> 12V, 7.0Ah
+                    </td>
+                    <td>
+                        <strong>Headlight:</strong> Dual LED headlight
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Position light:</strong> LED
+                    </td>
+                    <td>
+                        <strong>Brake/tail light:</strong> LED
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Speedometer:</strong> Digital
+                    </td>
+                    <td>
+                        <strong>Tachometer:</strong> Digital
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Fuel meter:</strong> Digital
+                    </td>
+                    <td>
+                        <strong>Fuel consumption indicator:</strong> Equipped
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="chassis" style="margin-top: 65px;">
+        <div class="b1">
+            <img src="r3 chassis.png" alt="pic">
+        </div>
+        <div class="b1">
+            <h1>Slim and lightweight sports chassis</h1>
+            <p>The compact and lightweight chassis is manufactured with latest structural analysis technology that gives an optimum balance of strength and rigidity. The near 50/50 front/rear weight distribution and accessible seat height deliver a confident and balanced ride.</p>
+        </div>
+    </div>
+
+    <div class="usd">
+        <div class="b2">
+            <img src="r3 usd.png" alt="pic" width="462">
+        </div>
+        <div class="b2">
+            <h1>37 mm upside down front forks</h1>
+            <p>Upside-down front fork with 37mm inner tubes provides good front-end feel during cornering, braking and other riding conditions. This design gives a sporty front-end feel and feedback without losing real-world comfort.</p>
+        </div>
+    </div>
+
+    <div class="console">
+        <div class="b3">
+            <img src="r3 console.png" alt="pic">
+        </div>
+        <div class="b3">
+            <h1>Advanced Fully Digital LCD Meter Console</h1>
+            <p>The R3 features multi-function LCD meter console that display’s information on gear position, fuel capacity, real time and average fuel economy. There’s also a water temperature gauge, clock, oil change indicator and trip meter – all presented in a clean, modern layout.</p>
+        </div>
+    </div>
+
+    <div class="design">
+        <div class="b4">
+            <img src="r3 design.png" alt="pic" width="462">
+        </div>
+        <div class="b4">
+            <h1>LOW FUEL TANK AND HANDLEBAR POSITION</h1>
+            <p>Thanks to the low fuel tank design and low handlebars, the R3's ergonomics give a pure supersport riding experience. As well as being extremely comfortable, the riding position makes it easy to grip the machine with your knees for improved confidence, especially when you’re tucking in close to the bodywork for maximum aerodynamic efficiency.</p>
+        </div>
+    </div>
+
+    <div class="led">
+        <div class="b5">
+            <img src="r3 led.png" alt="pic" width="462">
+        </div>
+        <div class="b5">
+            <h1>LED FLASHERS - FRONT & REAR</h1>
+            <p>Signal your unique identity with unmissable front and back LED flashers – a perfect mash-up of style and sporty.</p>
+        </div>
+    </div>
+
+    <div class="handlebar">
+        <div class="b6">
+            <img src="r3 handlebar.png" alt="pic" width="462">
+        </div>
+        <div class="b6">
+            <h1>YZR-M1 INSPIRED CAST ALUMINIUM HANDLEBAR CROWN</h1>
+            <p>The cast aluminium handlebar crown creates an exciting view as if sitting on the M1.The design with reinforcement ribs contributes to handling and steering that feels natural.</p>
+        </div>
+    </div>
+
+    <h2 class="footer">
+        Contact: sabhishek52@yahoo.com
+    </h2>
+
+    <script>
+        function myengine(){
+            var x=document.getElementById('c1');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mydimensions(){
+            var x=document.getElementById('c2');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mychassis(){
+            var x=document.getElementById('c3');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function myoi(){
+            var x=document.getElementById('c4');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

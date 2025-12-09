@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Terminology</title>
+    <style>
+        .dropdown{
+            margin-top: 30px;
+            margin-left: 200px;
+        }
+        .dropdown button{
+            width: 55%;
+            height: 55px;
+            font-size: 21px;
+            border: none;
+            cursor: pointer;
+            background-color: coral;
+        }
+        .content{
+            width: 80%;
+            height: 250px;
+            overflow: auto;
+            border: 1px solid gray;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-top: 70px; margin-left: 200px;">Motorcycle Terminology</h1>
+
+    <div class="dropdown" style="margin-top: 70px;">
+    <button onclick="mytcs()">Traction Control System</button>
+    <div class="content" id="c1">
+        <p>
+            The Motorcycle Traction Control System is a safey feature designed to prevent the rear wheel from slipping or spinning out of
+            control during acceleration.
+        </p>
+        <p>
+            <strong>Purpose:</strong> Traction control ensures stability by managing the power delivered to the rear wheel, especially in
+            situations where traction might be compromised (e.g., wet roads, gravel, or aggressive acceleration).
+        </p>
+        <p>
+            <strong>Categories:</strong>
+            <ul>
+                <li><strong>Reactive Traction Control:</strong> In this type, the system waits until the wheel starts spinning and then makes
+                corrections. Various components work together to prevent drifting.</li><br>
+                <li><strong>Predictive Traction Control:</strong> Here, the Electronic Control Unit (ECU) and sensors continuously monitor
+                data in real-time. They make adjustments before the wheel spins, effectively preventing drift. This type is faster and more
+                efficient.</li>
+            </ul>
+        </p>
+        <p>
+            <strong>Sensors and Components:</strong><br>
+            <ul>
+                <li><strong>Bank Angle Sensor:</strong> Measures the motorcycle's lean angle.</li>
+                <li><strong>Gyroscope:</strong> Detects changes in orientation.</li>
+                <li><strong>Throttle Position Sensor:</strong> Monitors throttle position.</li>
+                <li><strong>Gear Position Sensor:</strong> Determines the gear engaged.</li>
+                <li><strong>Vehicle Speed Sensor:</strong> Measures the motorcycle's speed.</li>
+            </ul>
+        </p>
+        <p>
+            <strong>How it works:</strong><br>
+            <ul>
+                <li><strong>ECU Processing:</strong> Modern ECUs process data from various sensors (including gravitational forces and lean
+                angles) within milliseconds.</li><br>
+                <li><strong>Power Control:</strong> The system adjusts power delivery to the rear wheel. It can:</li>
+                <ul>
+                    <li>Stop fuel supply to the engine, causing misfires.</li>
+                    <li>Use ride-by-wire technology to electronically adjust throttle position, limiting power even during aggressive revving.</li>
+                </ul><br>
+                <li><strong>Pre-configured riding modes:</strong> Some motorcycles offers different riding modes that limit throttle response
+                based on road conditions and rider preferences.</li>
+            </ul>
+        </p>
+        <p>
+            In summary, motorcycle traction control enhances safety by preventing wheel spin and maintaining stability, especially in challenging
+            riding conditions.
+        </p>
+    </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myabs()">ABS</button>
+        <div class="content" id="c2" style="height: 200px;">
+            <p>
+                ABS (Anti-lock Braking System) is a safety feature that is designed to prevent the wheels of a motorcycle from locking up
+                during hard braking.
+            </p>
+            <p>
+                ABS detects that a wheel is about to lock up, it automatically modulates the brake pressure to that wheel, allowing it to
+                continue rotating and maintaining traction on the road. This helps the rider to stop more quickly and safely, while also
+                providing stability and control during braking.
+            </p>
+            <p>
+                <strong>How it works:</strong> The wheel speed sensor constantly monitors the rotation of the wheel & sends a signal to
+                the ECU if it detects a wheel lock up. <br>
+                ABS operates by repeatedly releasing & reapplying brake force until the wheel gains traction. It all happens within milliseconds.
+            </p>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mysac()">Slipper & Assist Clutch</button>
+        <div class="content" id="c3">
+            <p>
+                <h3 style="text-align: center;">Slipper Clutch</h3>
+                <ul>
+                    <li>In regular clutch, when you pull the clutch lever, the inner hub (connected to the rear wheel via the gearbox) disengages from
+                    crankshaft input, allowing the rear wheel to rotate freely.
+                    </li><br>
+                    <li>However, if you downshift aggressively while the engine is near the redline, the rear wheel speed might be too high.
+                        This could lead to rear wheel lockup, skidding, or even a crash.
+                    </li><br>
+                    <li>The Slipper clutch prevents this by allowing the clutch to slip temporarily until the engine speed & rear wheel speed
+                        match properly again.
+                    </li><br>
+                    <li>
+                        A slipper clutch assembly has ramps built into the inner basket as well as the pressure plate. These ramps have the ability 
+                        to allow for a sliding or slipping motion in the direction of the rotation of the wheel. Now, with this kind of an arrangement, 
+                        under heavy deceleration caused by a sloppy downshift, the rear wheel won't be able to over rev the engine. Instead, the ramps 
+                        designed within the basket and the pressure plate would slide, or slip over each other, pushing the pressure plate away from the 
+                        clutch, release the frictional pressure that keeps the clutch pack together, thus allowing for a limited free movement of the rear 
+                        wheel and avoiding engine over-revving, rear wheel locking. This 'slipping' function within the clutch assembly allows a rider 
+                        to downshift more aggressively.
+                    </li><br>
+                </ul>
+                <h3 style="text-align: center;">Assist Clutch</h3>
+                <ul>
+                    <li>
+                        One issue that a lot of riders face, especially with higher capacity motorcycles which have a powerful spring pulling the pressure plate 
+                        in, is that it requires a lot of force. The clutch lever in such cases is very stiff, and the rider has to use a lot of force.
+                    </li><br>
+                    <li>
+                        A solution that automotive engineers have come up with is the 'Assist' clutch, which is also known as a 'slip and grip' clutch and works 
+                        very well in tandem with a slipper clutch. Slipper clutch has ramps, which only allow slippage of the pressure plate and basket as the bike 
+                        decelerates aggressively. It, however, doesn't have any modifications made to the assembly for the time when the bike accelerates. In the case 
+                        of Assist Clutch, there are reverse ramps too, which lock in, and pull the pressure plate in as the bike accelerates. Now, since the accelerating 
+                        force of the bike itself is helping pull the pressure plate in, increasing friction between the plates, the goal of using lesser, or lighter springs 
+                        could be achieved. As a result, a lesser force is required to be applied by the rider at the clutch lever.
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myqs()">Quickshifter</button>
+        <div class="content" id="c4">
+            <p>
+                A Quickshifter is a device that allows a motorcycle rider to shift gears without using the clutch or letting off the throttle. <br><br>
+                <strong>How it works:</strong>
+                <ol>
+                    <li>The rider applies pressure to the gear lever to shift up or down.</li>
+                    <li>The Quickshifter detects this movement & sends a signal to the engine control unit (ECU).</li>
+                    <li>The ECU momentarily cuts off the ignition or fuel supply to the engine.</li>
+                    <li>This interruption in power unloads the transmission, reducing the load on the drivetrain.</li>
+                    <li>The reduced load allows the gear to shift smoothly without needing to use the clutch or let off the throttle.</li>
+                    <li>Once the gear change is complete, the ignition or fuel supply is restored & power is smoothly transferred back to the engine.</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function mytcs(){
+            var x=document.getElementById('c1');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function myabs(){
+            var x=document.getElementById('c2');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+        function mysac(){
+            var x=document.getElementById('c3');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+        function myqs(){
+            var x=document.getElementById('c4');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

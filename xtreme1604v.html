@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Xtreme 160R 4V</title>
+    <style>
+        *{
+            background-color: #e7ecfc;
+        }
+        .header{
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+        .highlight{
+            border: 1px solid black;
+            width: 70%;
+            margin-left: 200px;
+        }
+        .highlight img{
+            float: left;
+        }
+        .highlight button{
+            padding: 5px;
+            margin: 3px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .highlight button:focus{
+            background-color: blueviolet;
+            color: white;
+        }
+        .dropdown{
+            margin-top: 30px;
+            width: 100%;
+        }
+        .dropdown button{
+            width: 45%;
+            height: 55px;
+            margin-left: 27.5%;
+            background-color: #3498DB;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 21px;
+        }
+        .dropdown button:hover{
+            background-color: #2980B9;
+        }
+        .content{
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            margin-left: auto;
+            margin-right: auto;
+            width: 790px;
+            display: none;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            font-size: 19px;
+            padding: 14px 21px;
+        }
+        .connect{
+            margin-left: 200px;
+        }
+        .connect button{
+            padding: 11px;
+            margin: 5px;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .connect button:hover{
+            background-color: fuchsia;
+        }
+        .connect button:focus{
+            background-color: red;
+        }
+        .footer{
+            width: 100%;
+            height: 200px;
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Xtreme 160R 4V</h1>
+
+    <div class="highlight">
+        <p>
+            <img src="xtreme 160 red.png" alt="pic" id="color">
+            <h1>₹ 1,27,300</h1>
+            <p>Ex-Showroom Price</p>
+            <button onclick="document.getElementById('color').src='xtreme 160 black.png'">Matt Slate Black</button>
+            <button onclick="document.getElementById('color').src='xtreme 160 red.png'">Pearl Red</button>
+        </p>
+    </div>
+
+    <h1 style="margin-top: 225px; margin-left: 200px;">Specifications</h1>
+
+    <div class="dropdown" style="margin-top: 50px;">
+        <button onclick="myengine()">Engine</button>
+        <div class="content" id="c1">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Engine Type:</strong> 4 stroke, Air-Oil Cooled, 4 Valve
+                    </td>
+                    <td>
+                        <strong>Max. Power:</strong> 16.9 Ps @8500 rpm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Max. Torque:</strong> 14.6 Nm @6500 rpm
+                    </td>
+                    <td>
+                        <strong>Displacement:</strong> 163.2 cc
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Compression Ratio:</strong> 10.1:1
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mywt()">Wheel & Tyres</button>
+        <div class="content" id="c2">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Front Tyre:</strong> 100/80-17 Tubeless
+                    </td>
+                    <td>
+                        <strong>Rear Tyre:</strong> 130/70 R17 Tubeless
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Wheel Type:</strong> Alloy
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mysus()">Suspension</button>
+        <div class="content" id="c3">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Front Suspension:</strong> Standard Telescopic, 37 mm dia
+                    </td>
+                    <td>
+                        <strong>Front Suspension (Premium):</strong> KYB USD Forks, 37 mm dia
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Rear Suspension:</strong> 7 Step Adjustable Monoshock
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mytc()">Transmission & Chassis</button>
+        <div class="content" id="c4">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Frame Type:</strong> Tubular Underbone Diamond Type
+                    </td>
+                    <td>
+                        <strong>Swing Arm:</strong> Box Type (50 x 30 mm rectangle tube)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Transmission Type:</strong> 5 Speed Constant Mesh
+                    </td>
+                    <td>
+                        <strong>Clutch Type:</strong> Multiplate Wet
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mybrakes()">Brakes</button>
+        <div class="content" id="c5">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Front Brake:</strong> Disc 276 mm Petal
+                    </td>
+                    <td>
+                        <strong>Rear Brake:</strong> Disc 220 mm Petal
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myelectric()">Electricals</button>
+        <div class="content" id="c6">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Starting System:</strong> Self Start
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>USB:</strong> USB Charger
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Lamps:</strong> LED Headlight with Position Lamps, LED Tail Light & LED Winkers
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Bluetooth:</strong> Bluetooth Connectivity
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Inverted LCD Display:</strong> Adjustable Brightness Display
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mydimensions()">Dimensions</button>
+        <div class="content" id="c7">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Overall Length:</strong> 2029 mm
+                    </td>
+                    <td>
+                        <strong>Overall Width:</strong> 793 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Overall Height:</strong> 1052 mm
+                    </td>
+                    <td>
+                        <strong>Seat Height:</strong> 795 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Wheelbase:</strong> 1333 mm
+                    </td>
+                    <td>
+                        <strong>Ground Clearance:</strong> 165 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Fuel Tank Capacity:</strong> 12 L
+                    </td>
+                    <td>
+                        <strong>Kerb Weight:</strong> 144 kg (Base), 145 kg (Pro)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Seat Type:</strong> Interchangeable Split Seat & Unibody Seat
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <h2 style="margin-left: 200px; margin-top: 80px; background-color: cyan; padding: 9px;">Hero Connect 2.0</h2>
+
+    <div class="connect">
+    <button onclick="mysafety()">Safety</button>
+    <button onclick="mysecurity()">Security</button>
+    <button onclick="mymaps()">Maps</button>
+    <button onclick="myvh()">Vehicle Health</button>
+    <button onclick="mytrips()">Trips</button>
+    </div>
+
+    <img src="text list.png" alt="pic" id="cl" style="margin-left: 200px; margin-top: 25px;">
+
+    <h2 class="footer">Contact: sabhishek52@yahoo.com</h2>
+
+    <script>
+        function mysafety(){
+            document.getElementById('cl').src="text list.png";
+        }
+
+        function mysecurity(){
+            document.getElementById('cl').src="text list1.png";
+        }
+
+        function mymaps(){
+            document.getElementById('cl').src="text list2.png";
+        }
+
+        function myvh(){
+            document.getElementById('cl').src="text list3.png";
+        }
+
+        function mytrips(){
+            document.getElementById('cl').src="text list4.png";
+        }
+
+        function myengine(){
+            var x=document.getElementById('c1');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mywt(){
+            var x=document.getElementById('c2');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mysus(){
+            var x=document.getElementById('c3');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mytc(){
+            var x=document.getElementById('c4');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mybrakes(){
+            var x=document.getElementById('c5');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function myelectric(){
+            var x=document.getElementById('c6');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mydimensions(){
+            var x=document.getElementById('c7');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

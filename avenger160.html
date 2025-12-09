@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenger 160 Street</title>
+    <style>
+        *{
+            background-color: #e7ecfc;
+        }
+        .header{
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+        .highlight{
+            border: 1px solid black;
+            width: 70%;
+            margin-left: 200px;
+        }
+        .highlight img{
+            float: left;
+        }
+        .highlight button{
+            padding: 5px;
+            margin: 4px;
+            border-radius: 5px;
+        }
+        .highlight button:focus{
+            background-color: blueviolet;
+            color: white;
+        }
+        .dropdown{
+            margin-top: 30px;
+        }
+        .dropdown button{
+            width: 45%;
+            height: 55px;
+            margin-left: 27.5%;
+            background-color: #3498DB;
+            color: white;
+            font-size: 21px;
+            cursor: pointer;
+            border: none;
+        }
+        .dropdown button:hover{
+            background-color: #2980B9;
+        }
+        .content{
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            width: 790px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            font-size: 19px;
+            padding: 14px 21px;
+        }
+        .footer{
+            margin-top: 60px;
+            width: 100%;
+            height: 200px;
+            background-color: darkmagenta;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Avenger 160 Street</h1>
+
+    <div class="highlight">
+        <p>
+            <img src="avenger black_processed.png" alt="pic" width="600" id="color">
+            <h1>₹ 1,20,838</h1>
+            <p>Ex-Showroom Price</p>
+            <button onclick="document.getElementById('color').src='avenger red_processed.png'">Spicy Red</button>
+            <button onclick="document.getElementById('color').src='avenger black_processed.png'">Ebony Black</button>
+        </p>
+    </div>
+
+    <h1 style="margin-top: 300px; margin-left: 200px;">Specifications</h1>
+
+    <div class="dropdown">
+        <button onclick="myengine()">Engine</button>
+        <div class="content" id="c1">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Engine Type:</strong> Single Cylinder, Twin Spark DTS-i, 4 Stroke, SOHC, 2 Valve, Air Cooled
+                    </td>
+                    <td>
+                        <strong>Displacement:</strong> 160 cc
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Max Power:</strong> 15 PS @8500 rpm
+                    </td>
+                    <td>
+                        <strong>Max Torque:</strong> 13.7 Nm @7000 rpm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Fuel System:</strong> Fuel Injection
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mystb()">Suspension, Tyres & Brakes</button>
+        <div class="content" id="c2">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Front Suspension:</strong> Telescopic with double anti friction bush
+                    </td>
+                    <td>
+                        <strong>Rear Suspension:</strong> 5 step adjustable Twin shock absorber 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Front Tyre:</strong> 90/90-17 49P, Tubeless
+                    </td>
+                    <td>
+                        <strong>Rear Tyre:</strong> 130/90-15 66P, Tubeless
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Front Brake:</strong> 280 mm Disc ABS
+                    </td>
+                    <td>
+                        <strong>Rear Brake:</strong> 130 mm Drum
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myelectric()">Electricals</button>
+        <div class="content" id="c3">
+            <table>
+                <tr>
+                    <td>
+                        <strong>System:</strong> 12V, 4Ah VRLA 
+                    </td>
+                    <td>
+                        <strong>Headlamp (Low/High Beam):</strong> 55/60 W
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="mydimensions()">Dimensions</button>
+        <div class="content" id="c4">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Length:</strong> 2210 mm
+                    </td>
+                    <td>
+                        <strong>Width:</strong> 806 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Height:</strong> 1070 mm
+                    </td>
+                    <td>
+                        <strong>Seat Height:</strong> 737 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Ground Clearance:</strong> 169 mm
+                    </td>
+                    <td>
+                        <strong>Wheelbase:</strong> 1490 mm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Kerb Weight:</strong> 156 kg
+                    </td>
+                    <td>
+                        <strong>Fuel Tank Capacity:</strong> 13 L
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Reserve:</strong> 3.8 L
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <h2 class="footer">Contact: sabhishek52@yahoo.com</h2>
+
+    <script>
+        function myengine(){
+            var x=document.getElementById('c1');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mystb(){
+            var x=document.getElementById('c2');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function myelectric(){
+            var x=document.getElementById('c3');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+
+        function mydimensions(){
+            var x=document.getElementById('c4');
+            if(x.style.display=="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
